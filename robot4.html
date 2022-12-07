@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link rel="stylesheet" href="site.css">
+
+   <ul>
+    <li><a href="site.html">Home</a></li>
+    <li><a href="robots1.html">Windows</a></li>
+    <li><a href="robot2.html">MacOS</a></li>
+    <li><a href="robot3.html">Linux</a></li>
+    <li><a href="robot4.html">Android</a></li>
+    <li style="float:right"><a  href="add.html">Додаткове</a></li>
+  </ul> 
+    <h1>Android</h1>
+</head>
+<body>
+    <p>Android — операційна система і платформа для мобільних
+         телефонів та планшетних комп'ютерів, створена компанією Google
+          на базі ядра Linux. Підтримується альянсом Open Handset Alliance.</p>
+
+        <p>Хоча Android базується на ядрі Linux, він стоїть дещо осторонь 
+            Linux-спільноти та Linux-інфраструктури. Базовим елементом цієї 
+            операційної системи є реалізація Dalvik віртуальної машини Java, 
+            і все програмне забезпечення і застосування спираються на цю реалізацію 
+            Java.</p>
+            <p>Android - вільне програмне забезпечення. 
+                Саме відкритий код дозволяє модифікувати базову операційну систему,
+                 а також створювати її нові дистрибутиви. Справа в тому,
+                  що дана операційна система може бути встановлена ​​практично
+                   на будь-який мобільний пристрій на відміну, наприклад, від iOS 
+                   (операційна система компанії Apple, яка призначена для iPhone,
+                    iPad, а також інших пристроїв, виробництва цієї компанії).</p>
+
+    <div class="slideshow-container">
+
+            
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://itc.ua/wp-content/uploads/2020/04/android_logo_stacked__rgb_.5.jpg" style="width:80%">
+          <div class="text"></div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://mob-mobile.ru/uploads/posts/2019-05/1558650622_unnecessary-applications-in-the-smartphone.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://d500.epimg.net/cincodias/imagenes/2021/11/23/lifestyle/1637650722_970768_1637650824_noticia_normal.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <script>let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <p>Крім того, Android має розвинене співтовариство програмістів,
+             що створюють спеціальні програми під цю операційну систему,
+              які розширюють її функціональність. Як правило, практично всі
+               програми для Android написані на мові програмування Java. 
+               Утиліти для цієї операційної системи можуть поширюватися безкоштовно,
+                а деякі - за гроші. </p>
+                
+            <p>Легкість налаштування, безкоштовність, простота в роботі
+                 і дозволили Android стати однією з найбільш широко
+                  використовуваних мобільних платформ. З кожним роком до 
+                  розробки Android і вдосконалення додатків приєднується
+                   все більша кількість людей, що додають нові функції або ж
+                    адаптують Android під пристрої, які спочатку для цієї
+                     операційної системи не були призначені.</p>
+            
+            <p>Програмне забезпечення Android має кілька версій.
+                 Першою версією цієї операційної системи була 1.0, 
+                 а на сьогоднішній день найактуальнішою є 10. Компанія Google
+                  дала назви різними версіями з кулінарного принципу (желе, сендвіч,
+                   морозиво та ін.). Ось так виглядають різні версії Android:</p>
+</body>
+</html>

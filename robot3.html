@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link rel="stylesheet" href="site.css">
+
+    <ul>
+      <li><a href="site.html">Home</a></li>
+      <li><a href="robots1.html">Windows</a></li>
+      <li><a href="robot2.html">MacOS</a></li>
+      <li><a href="robot3.html">Linux</a></li>
+      <li><a href="robot4.html">Android</a></li>
+      <li style="float:right"><a  href="add.html">Додаткове</a></li>
+    </ul>  
+      <h1>Linux</h1>
+</head>
+<body>
+    <p>linux   — це операційна система, ядро ​​якої поширюється на безкоштовній основі.
+       Вона складається з ядра системи і набору невеликих програм, що взаємодіють з
+        цим ядром. Само по собі, без програм, ядро абсолютно марно для роботи, але на
+         його основі можна зібрати власну версію операційної системи, дистрибутив. На 
+         сьогоднішній день дистрибутивівlinux існує не менше 9000, нові з'являються
+          регулярно.</p>
+
+      <p>Ядро початок розроблятися ще в 1991 році Лінус Торвальдс, 
+        студентом з Фінляндії. Найперша версія 0.01 була представлена ним
+         17 вересня 1991 року. Торгова маркаlinux була зареєстрована розробником,
+          але сама назва вибиралося за допомогою призначеного для користувача 
+          голосування. Нинішній символ операційної систем, пінгвін Такс був придуманий
+           особисто Торвальдс.  
+      </p>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="http://ipkey.com.ua/media/k2/items/cache/92147a43a78b5983afe1a0dfa23dc633_XL.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="http://ipkey.com.ua/images/software/linux_1.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://cdn.cybercalm.org/wp-content/uploads/2019/10/21164440/linux-penguin-security-100694867-large.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <script>let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <p>Було зібрано ядро, але для нього ще не існувало програм.
+               Замість того, щоб писати ПО з нуля, Торвальдс прикрутив до ядра linux
+                існуючі тоді програми проекту GNU, розробленого Річардом Столлманом
+                 для руху вільного ПЗ. З тих пірlinux розширювалася, з'являлися нові
+                  дистрибутиви. На базі цього ядра була побудована навіть операційна 
+                  система Android, популярність якої оскаржити неможливо.</p>
+  </body>
+</html>
